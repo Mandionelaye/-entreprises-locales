@@ -45,7 +45,7 @@ function App() {
       } else {
         setResults([]);
         setTotalResults(0);
-        setError('Aucun résultat trouvé');
+        setError('Aucun résultat trouvé'); 
       }
     } catch (err) {
       console.error('Erreur lors de la recherche:', err);
@@ -57,7 +57,7 @@ function App() {
     }
   };
 
-  // Calculer les résultats à afficher pour la page courante
+  // / Calculer les résultats à afficher pour la page courante
   const indexOfLastResult = currentPage * resultsPerPage;
   const indexOfFirstResult = indexOfLastResult - resultsPerPage;
   const currentResults = results.slice(indexOfFirstResult, indexOfLastResult);
